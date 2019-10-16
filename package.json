@@ -5,7 +5,7 @@
     "author": "Bowden Kelly",
     "license": "MIT",
     "scripts": {
-        "start": "npm run serve",
+        "start": "node dist/server.js",
         "build": "npm run build-sass && npm run build-ts && npm run lint && npm run copy-static-assets",
         "serve": "node dist/server.js",
         "watch-node": "nodemon dist/server.js",
