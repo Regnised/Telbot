@@ -125,9 +125,9 @@ const bot: TelegrafTypes = new Telegraf("904359879:AAG6BPrb6ibqmh9obiA_L_Cj3wSFa
 
 console.log( bot );
 bot.start((ctx: { reply: (arg0: string) => void }) => ctx.reply("Welcome"));
-bot.help((ctx: { reply: (arg0: string) => void }) => ctx.reply("Send me a sticker"))
-bot.on("sticker", (ctx: { reply: (arg0: string) => void }) => ctx.reply("👍"))
-bot.hears("hi", (ctx: { reply: (arg0: string) => void }) => ctx.reply("Hey there"))
+bot.help((ctx: { reply: (arg0: string) => void }) => ctx.reply("Send me a sticker"));
+bot.on("sticker", (ctx: { reply: (arg0: string) => void }) => ctx.reply("👍"));
+bot.hears("hi", (ctx: { reply: (arg0: string) => void }) => ctx.reply("Hey there"));
 bot.launch();
 
 export default app;
